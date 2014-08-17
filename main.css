@@ -1,0 +1,270 @@
+.topQuestion {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: -25px;
+  padding-left: 15px;
+  border-radius: 10px;
+  background-color: #445155;
+  /*color: #D14334;*/
+  float: center;
+  height: 100px;
+  opacity: 0;
+  /*display: none;*/
+}
+
+.topQuestion h1 {
+  font-size: 24px;
+  color: white;
+  /*opacity: 1;*/
+  text-align: center;
+  padding-top: 35px;
+  position: relative;
+  display: none;
+}
+
+
+html {
+    height: 100%;
+}
+
+/** { 
+  outline: 1px solid black;
+}
+*/
+body { /*this is the blue gradient background*/
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background: #ffffff;
+  background: -webkit-linear-gradient(#ffffff, #ffffff);
+  background:    -moz-linear-gradient(#ffffff, #ffffff);
+  background:         linear-gradient(#ffffff, #ffffff);
+}
+
+.header-text { /*The A-List*/
+  font-family:'Nunito', sans-serif;
+  /*font-style: italic;*/
+  font-weight: bold;
+  color: #3E4147;
+  /*padding-left: 40px;*/
+  padding-top: 5px;
+  font-size: 50px;
+  text-align: center;
+}
+
+.description{ /*How well do you know your pet cyberstars?*/
+  font-family: 'Amatic SC', cursive;
+  /*font-style: italic;*/
+  color: #34BEDA;
+  opacity: 100%;
+  padding-left: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  font-size: 35px;
+  text-align: center;
+}
+
+
+
+#makeyourguess { /*Make Your Guess! background and the actual word "Make Your Guess!"*/
+  font-family: 'Amatic SC', cursive;
+  color: #3E4147;
+  opacity: 80%;
+  /*padding-right: 21%;*/
+  padding-top: 6px;
+  /*padding-left: 40px;*/
+  padding-bottom: 6px;
+  font-size: 50px;
+  margin-top: -4px; /*had to do this so there's no white space between GIF and "Make Your Guess!"" horizontal bar*/
+  background: #ffffff;
+  text-align: center;
+}
+
+#choice1 { /*first choice for a pet's name*/
+  font-family:'Nunito', sans-serif;
+  color: #ffffff;
+  opacity: 100%;
+  margin-top: 0px;
+  /*padding-left: 40px;*/
+  padding-top: 3px;
+  padding-bottom: 3px;
+  font-size: 24px;
+  background: #606060;
+  text-align: center;
+}
+
+#choice2 { /*first choice for a pet's name*/
+  font-family:'Nunito', sans-serif;
+  color: #ffffff;
+  opacity: 100%;
+  margin-top: 0px;
+  /*padding-left: 40px;*/
+  padding-top: 3px;
+  padding-bottom: 3px;
+  font-size: 24px;
+  background: #808080;
+  text-align: center;
+}
+
+#choice3 { /*first choice for a pet's name*/
+  font-family:'Nunito', sans-serif;
+  color: #ffffff;
+  opacity: 100%;
+  margin-top: 0px;
+  /*padding-left: 40px;*/
+  padding-top: 3px;
+  padding-bottom: 3px;
+  font-size: 24px;
+  background: #707070;
+  text-align: center;
+}
+
+#submit {
+  font-family:'Nunito', sans-serif;
+  color: #7B5A6D;
+  opacity: 100%;
+  margin-top: 0px;
+  /*padding-left: 40px;*/
+  padding-top: 3px;
+  padding-bottom: 3px;
+  font-size: 34px;
+  background: #ffffff;
+  text-align: center;
+}
+
+#choice1:hover, #choice2:hover, #choice3:hover, #choice4:hover {
+  background-color: #CEDFCB;
+}
+
+#submit:hover {
+  color: #C6D21C;
+}
+
+.main { /* this is the horizontal block of white - CONSIDER MAKING THE HEIGHT SMALLER BECAUSE I WANT TO SEE BLUE BOTTOM*/ 
+  /*background-color: white;*/
+  margin-top: 50px;
+  padding-bottom: 0px;
+}
+
+.box{ /*this box holds the gif*/
+  margin-top: 40px;
+  /*margin-left: 100px;*/
+  margin-left:0px; /*this makes the gif image stick to the left of the page*/
+}
+
+/*body {
+	background-color: #10d897;
+}*/
+
+/*OLD CODE HERE OLD CODE HERE OLD CODE HERE OLD CODE HERE OLD CODE HERE OLD CODE HERE OLD CODE*/
+
+#newItem { /*this is the "enter item here" bar*/
+  height: 45px;
+  width: 700px;
+  font-family: georgia;
+  font-size: 1.5em;
+  font-style: italic;
+  text-indent: 12px;
+  border: 1px solid;
+  border-radius: 2px;
+  margin-left: 50px;
+  margin-top: 10px;
+  border-color: #bdc3c7;
+}
+
+#newItem:hover {
+	border-color: #fbd386;
+}
+
+#addItem { /*this is the "+" box*/
+  height: 49px;
+  background-color: ##bdc3c7;
+  color:white;
+  border: 0;
+  border-radius: 2px;
+  margin-left: -6px;
+  margin-top: 90px; /*change this to move form's bar up and down*/
+  margin-bottom: 1px;
+  padding: 3px 20px 3px 20px;
+  font-size: 25px;
+  font-family: arial;
+  font-style: bold;
+}
+
+#addItem:hover {
+	background:#fbd386;
+}
+
+#itemList {
+	text-align: left;
+	padding-left: 50px;
+	padding-bottom: 70px;
+	padding-top: 20px;
+	display: block;
+}
+
+.list {
+	display: inline-block;
+}
+
+
+
+/*li {
+	font-family: georgia; 
+	font-style: italic;
+	font-size: 1em;
+	display: block;
+	padding: 3px 0; 
+}*/
+
+.highlight {
+	color: #2ecc71; /*greenish color*/
+}
+
+.checkbox {
+	height: 30px; 
+	background-color: #bdc3c7;
+	border: 0;
+	border-radius: 2px; 
+	margin-right: 20px; 
+	margin-top: 10px;
+	margin-bottom: 10px; 
+	padding: 5px 10px 5px 10px;
+	font-size: 1em;
+	font-family: arial;
+	color: white;
+}
+
+.checkbox:hover {
+	background-color: #2ecc71;
+	color: #ffffff;
+}
+
+.delete { 
+	height: 30px;
+	background-color: #bdc3c7;
+	border: 0;
+	border-radius: 2px; 
+	margin-right: 20px; 
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 5px 10px 5px 10px;
+	font-size: 1em;
+	font-family: arial;
+	float: right;
+	color: white;
+}
+
+.delete:hover {
+	background-color: #e74c3c;
+	color: #fff;
+}
+
+.delete:focus {
+	outline: none;
+}
+
+
+
