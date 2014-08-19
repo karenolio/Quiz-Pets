@@ -1,27 +1,67 @@
-.topQuestion {
-  width: 60%;
-  margin-left: auto;
-  margin-right: auto;
+/*Intro PAGE*/
+#getStarted {
   position: relative;
-  top: -25px;
-  padding-left: 15px;
-  border-radius: 10px;
-  background-color: #445155;
-  /*color: #D14334;*/
   float: center;
-  height: 100px;
-  opacity: 0;
-  /*display: none;*/
+  width: 95%;
+  margin: 150px 0px 20px 25px;
+  min-width: 500px;
+  color: black;
 }
 
-.topQuestion h1 {
-  font-size: 24px;
-  color: white;
-  /*opacity: 1;*/
+#intro{
+  /*text-transform: none;
+  color: #028F76;*/
+  color: grey;
+  font-size: 25px;
   text-align: center;
-  padding-top: 35px;
-  position: relative;
-  display: none;
+  line-height: 1.5;
+  float: center;
+  font-family:'Nunito', sans-serif;
+  margin-top: 50px;
+}
+
+.button {
+  background-color: #7B5A6D;
+  margin-top: 50px;
+  margin-left: 25%;
+  font-size: 28px;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  border: none;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-family:'Nunito', sans-serif;
+  border-style: none;
+  min-width: 50%;
+}
+
+#start{
+
+}
+
+#start:hover {
+  background-color: #028F76;
+}
+
+#start:active {
+  background-color: #028F76;
+}
+
+/* REST OF THE CODE HERE*/
+
+.box{ /*this box holds the gif*/
+  margin-top: 40px;
+  /*margin-left: 100px;*/
+  margin-left:0px; /*this makes the gif image stick to the left of the page*/
+  opacity: 0;
+}
+
+.box h1 { /*mine are pictures but in case picture doesn't load*/
+  font-size: 24px;
+  color: black;
+  /*opacity: 1;*/
+  text-align: center;  
 }
 
 
@@ -67,7 +107,6 @@ body { /*this is the blue gradient background*/
 }
 
 
-
 #makeyourguess { /*Make Your Guess! background and the actual word "Make Your Guess!"*/
   font-family: 'Amatic SC', cursive;
   color: #3E4147;
@@ -80,6 +119,22 @@ body { /*this is the blue gradient background*/
   margin-top: -4px; /*had to do this so there's no white space between GIF and "Make Your Guess!"" horizontal bar*/
   background: #ffffff;
   text-align: center;
+}
+
+.answers { /*have to adjust*/
+  font-family:'Nunito', sans-serif;
+  color: #ffffff;
+  opacity: 100%;
+  margin-top: 0px;
+  /*padding-left: 40px;*/
+  padding-top: 3px;
+  padding-bottom: 3px;
+  font-size: 24px;
+  background: #606060;
+  text-align: center;
+  border-color: white; /*NOT WORKING?*/
+  border-width: 2px;
+
 }
 
 .answer { /*answer choices - has the pet's name*/
@@ -101,7 +156,7 @@ body { /*this is the blue gradient background*/
   background-color: #CEDFCB;
 }
 
-/*.submitButton { /* NOT SURE IF THIS DOES ANYTHING SO I RMVD
+.submitButton { /* NEW note: leaving in for now; OLD: NOT SURE IF THIS DOES ANYTHING SO I RMVD*/
   font-family:'Nunito', sans-serif;
   color: red;
   opacity: 100%;
@@ -111,7 +166,7 @@ body { /*this is the blue gradient background*/
   font-size: 34px;
   background: #ffffff;
   text-align: center;
-}*/
+}
 
 .submit { /*actual SUBMIT text, but also controls border, here there's no border at all*/
   font-family:'Nunito', sans-serif;
@@ -156,6 +211,9 @@ body { /*this is the blue gradient background*/
   font-family:'Nunito', sans-serif;
   color: #7B5A6D;
   opacity: 100%;
+  margin-top: 0px;
+  padding-top: 6px;
+  padding-bottom: 6px;
   width: 100%;
   font-size: 34px;
   background: #ffffff;
@@ -187,10 +245,25 @@ body { /*this is the blue gradient background*/
   padding-bottom: 0px;
 }
 
-.box{ /*this box holds the gif*/
-  margin-top: 40px;
-  /*margin-left: 100px;*/
-  margin-left:0px; /*this makes the gif image stick to the left of the page*/
+
+.unAnswered {
+  background-color: black;
+}
+
+.currentQuestion{
+  background-color: blue;
+}
+
+.rightAnswer {
+  background-color: green;
+}
+
+.wrongAnswer {
+  background-color: orange; 
+}
+
+.selecedAnswer {
+  background-color: green;
 }
 
 /*body {
@@ -198,112 +271,4 @@ body { /*this is the blue gradient background*/
 }*/
 
 /*OLD CODE HERE OLD CODE HERE OLD CODE HERE OLD CODE HERE OLD CODE HERE OLD CODE HERE OLD CODE*/
-
-#newItem { /*this is the "enter item here" bar*/
-  height: 45px;
-  width: 700px;
-  font-family: georgia;
-  font-size: 1.5em;
-  font-style: italic;
-  text-indent: 12px;
-  border: 1px solid;
-  border-radius: 2px;
-  margin-left: 50px;
-  margin-top: 10px;
-  border-color: #bdc3c7;
-}
-
-#newItem:hover {
-	border-color: #fbd386;
-}
-
-#addItem { /*this is the "+" box*/
-  height: 49px;
-  background-color: ##bdc3c7;
-  color:white;
-  border: 0;
-  border-radius: 2px;
-  margin-left: -6px;
-  margin-top: 90px; /*change this to move form's bar up and down*/
-  margin-bottom: 1px;
-  padding: 3px 20px 3px 20px;
-  font-size: 25px;
-  font-family: arial;
-  font-style: bold;
-}
-
-#addItem:hover {
-	background:#fbd386;
-}
-
-#itemList {
-	text-align: left;
-	padding-left: 50px;
-	padding-bottom: 70px;
-	padding-top: 20px;
-	display: block;
-}
-
-.list {
-	display: inline-block;
-}
-
-
-
-/*li {
-	font-family: georgia; 
-	font-style: italic;
-	font-size: 1em;
-	display: block;
-	padding: 3px 0; 
-}*/
-
-.highlight {
-	color: #2ecc71; /*greenish color*/
-}
-
-.checkbox {
-	height: 30px; 
-	background-color: #bdc3c7;
-	border: 0;
-	border-radius: 2px; 
-	margin-right: 20px; 
-	margin-top: 10px;
-	margin-bottom: 10px; 
-	padding: 5px 10px 5px 10px;
-	font-size: 1em;
-	font-family: arial;
-	color: white;
-}
-
-.checkbox:hover {
-	background-color: #2ecc71;
-	color: #ffffff;
-}
-
-.delete { 
-	height: 30px;
-	background-color: #bdc3c7;
-	border: 0;
-	border-radius: 2px; 
-	margin-right: 20px; 
-	margin-top: 10px;
-	margin-bottom: 10px;
-	padding: 5px 10px 5px 10px;
-	font-size: 1em;
-	font-family: arial;
-	float: right;
-	color: white;
-}
-
-.delete:hover {
-	background-color: #e74c3c;
-	color: #fff;
-}
-
-.delete:focus {
-	outline: none;
-}
-
-
 
