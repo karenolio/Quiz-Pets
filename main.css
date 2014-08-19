@@ -82,7 +82,7 @@ body { /*this is the blue gradient background*/
   text-align: center;
 }
 
-#choice1 { /*first choice for a pet's name*/
+.answer { /*answer choices - has the pet's name*/
   font-family:'Nunito', sans-serif;
   color: #ffffff;
   opacity: 100%;
@@ -93,54 +93,93 @@ body { /*this is the blue gradient background*/
   font-size: 24px;
   background: #606060;
   text-align: center;
+  border-color: white; /*NOT WORKING?*/
+  border-width: 2px;
 }
 
-#choice2 { /*first choice for a pet's name*/
-  font-family:'Nunito', sans-serif;
-  color: #ffffff;
-  opacity: 100%;
-  margin-top: 0px;
-  /*padding-left: 40px;*/
-  padding-top: 3px;
-  padding-bottom: 3px;
-  font-size: 24px;
-  background: #808080;
-  text-align: center;
+.answer:hover{
+  background-color: #CEDFCB;
 }
 
-#choice3 { /*first choice for a pet's name*/
+/*.submitButton { /* NOT SURE IF THIS DOES ANYTHING SO I RMVD
   font-family:'Nunito', sans-serif;
-  color: #ffffff;
+  color: red;
   opacity: 100%;
   margin-top: 0px;
-  /*padding-left: 40px;*/
-  padding-top: 3px;
-  padding-bottom: 3px;
-  font-size: 24px;
-  background: #707070;
-  text-align: center;
-}
-
-#submit {
-  font-family:'Nunito', sans-serif;
-  color: #7B5A6D;
-  opacity: 100%;
-  margin-top: 0px;
-  /*padding-left: 40px;*/
   padding-top: 3px;
   padding-bottom: 3px;
   font-size: 34px;
   background: #ffffff;
   text-align: center;
+}*/
+
+.submit { /*actual SUBMIT text, but also controls border, here there's no border at all*/
+  font-family:'Nunito', sans-serif;
+  color: #7B5A6D;
+  opacity: 100%;
+  margin-top: 0px;
+  /*padding-left: 40px;*/
+  padding-top: 6px;
+  padding-bottom: 6px;
+  width: 100%;
+  font-size: 34px;
+  background: #ffffff;
+  text-align: center;
+  border-color: #ffffff;
+  border-style: none;
 }
 
-#choice1:hover, #choice2:hover, #choice3:hover, #choice4:hover {
-  background-color: #CEDFCB;
+.submit:hover {
+  color: #ffffff;
+  background: #C6D21C;
 }
 
-#submit:hover {
-  color: #C6D21C;
+.answerPopUp {
+  background-color: #7B5A6D;
+  width: 70%;
+  float: center;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  color: #ffffff;
+  display:none;
+  top: 50px;
+  height: 250px; 
+  border-radius: 15px;
+  text-align: justify;
+  padding: 100px; 
+  opacity: .90;
+  font-family:'Nunito', sans-serif;
 }
+
+.continue { /*This is the actual CONTINUE button on the pop up screen*/
+  font-family:'Nunito', sans-serif;
+  color: #7B5A6D;
+  opacity: 100%;
+  width: 100%;
+  font-size: 34px;
+  background: #ffffff;
+  text-align: center;
+  border-color: #ffffff;
+  border-style: none;
+  padding: 15px 50px 15px 45px;
+  float: center;
+  margin-top: 50px;
+  margin-left: 0px;
+  border: none;
+  width: 200px;
+}
+
+#correct {
+  display: inline-block;
+  display: none;
+}
+
+#incorrect {
+  display: inline-block;
+  display: none;
+}
+
 
 .main { /* this is the horizontal block of white - CONSIDER MAKING THE HEIGHT SMALLER BECAUSE I WANT TO SEE BLUE BOTTOM*/ 
   /*background-color: white;*/

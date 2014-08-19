@@ -18,44 +18,110 @@
 <div class = "main">
 	
 
-	<!--<div id="topQuestion">
-			<h1 id="firstQuestion">Where was the location of the first Real World?</h1>
-			<h1 id="secondQuestion">Which season of The Real Housewives featured Camile Fraser?</h1>
-			<h1 id="thirdQuestion">How many couples on The Bachelor have tied the knot?</h1>
-			<h1 id="fourthQuestion">What did Kanye West and Kim Kardashian name their first child?</h1>
-			<h1 id="fifthQuestion">Who was the winner of the first season of Survivor?</h1>
-		</div> -->
+<div class="box"> <!-- reality - #topQuestion + CSS is good-->
+			<h1 id="firstQuestion"><img src="corbin.gif" alt="Vacuum dog" width="100%" height="40%"></h1>
+			<h1 id="secondQuestion"><img src="maru.gif" alt="Vacuum dog" width="100%" height="40%"></h1>
+			<h1 id="thirdQuestion"><img src="boo.gif" alt="Vacuum dog" width="100%" height="40%"></h1>
+			<h1 id="fourthQuestion"><img src="grumpy.gif" alt="Vacuum dog" width="100%" height="40%"></h1>
+			<h1 id="fifthQuestion"><img src="biddy.gif" alt="Vacuum dog" width="100%" height="30%"></h1>
+</div> 
 
-
-	<div class="box">
-		<img src="corbin.gif" alt="Vacuum dog" width="100%" height="40%"> <!-- the "%" makes it responsive -->
-	</div>
-
-	<div class = "makingchoices"
-
-		<div id = "makeyourguess">
+<div id = "makeyourguess"> <!-- White Horizontal bar that says "Make Your Guess!" -->
 			<p>Make Your Guess!</p>
+</div>	
+ 
+<!--Answers for a selection of pets name starts here - there are FIVE sets of answers, each with THREE choices--> 
+	<div class = "answers" id ="q1">
+		<div class = "answer" name="Thorgi">
+			<p>Thorgi</p>
 		</div>	
 
-		<div id = "choice1">
-			<p>Pet Name</p>
+		<div class = "answer" name = "Corbin">
+			<p>Corbin</p>
 		</div>	
 
-		<div id = "choice2">
-			<p>Pet Name2</p>
-		</div>	
-
-		<div id = "choice3">
-			<p>Pet Name3</p>
-		</div>	
-
-		<div id = "submit">
-			<p>SUBMIT MY ANSWER!</p>
-		</div>	
+		<div class = "answer" name = "Corgnelius">
+			<p>Corgnelius</p>
+		</div>		
 	</div>	
 	
+	<div class = "answers" id ="q2">
+		<div class = "answer" name="Mugu Mogu">
+			<p>Mugu Mogu</p>
+		</div>	
 
+		<div class = "answer" name = "Mimi">
+			<p>Mimi</p>
+		</div>	
+
+		<div class = "answer" name = "Maru">
+			<p>Maru</p>
+		</div>		
+	</div>	
+
+	<div class = "answers" id ="q3">
+		<div class = "answer" name="Bearie">
+			<p>Bearie</p>
+		</div>	
+
+		<div class = "answer" name = "Bu Bu">
+			<p>Bu Bu</p>
+		</div>	
+
+		<div class = "answer" name = "Boo">
+			<p>Boo</p>
+		</div>		
+	</div>	
+
+	<div class = "answers" id ="q4">
+		<div class = "answer" name="Moozy">
+			<p>Moozy</p>
+		</div>	
+
+		<div class = "answer" name = "Grumpy">
+			<p>Grumpy</p>
+		</div>	
+
+		<div class = "answer" name = "Mandoo">
+			<p>Mandoo</p>
+		</div>		
+	</div>		
+
+	<div class = "answers" id ="q5">
+		<div class = "answer" name="Itsy Bitsy">
+			<p>Itsy Bitsy</p>
+		</div>	
+
+		<div class = "answer" name = "Spikey">
+			<p>Spikey</p>
+		</div>	
+
+		<div class = "answer" name = "Biddy">
+			<p>Biddy</p>
+		</div>		
+	</div>	
+
+<!--Pop up to inform CORRECT or INCORRECT to user-->
+	<div class="answerPopUp" id="correct">	
+		<h1>Correct!</h1>
+		<h2>You got it right!</h2>
+		<input type="submit" value="Continue" class="continue">
+	</div>
 	
+	<div class="answerPopUp" id="incorrect">
+		<h1>Sorry</h1>
+		<h2>Wrong Answer</h2>
+		<input type="submit" value="Continue" class="continue">
+	</div>
+	
+<!--Submit Button-->
+
+	<div class ="submitButton">
+		<input type="submit" value="Submit My Answer!" class="submit"</p>	
+	</div>	
+
+
+<!--Wrap up code above this line.-->	
 </div>	
 
 </body>
