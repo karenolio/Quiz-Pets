@@ -50,6 +50,10 @@
 
 /* REST OF THE CODE HERE*/
 
+.gif {
+  display:none;
+}
+
 .box{ /*this box holds the gif*/
   margin-top: 40px;
   /*margin-left: 100px;*/

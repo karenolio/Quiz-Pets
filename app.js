@@ -8,7 +8,7 @@ $(".submitButton").hide();
 //Intro PAGE
 $('#start').on('click', function(){
       console.log("start button functions");
-      var getStarted = $('#getStarted');
+   
       $('#getStarted').hide();
       q1Appear();
 });
@@ -193,7 +193,7 @@ function checkAnswer(question, answer) { //can i also use function checkAnswer (
     }
 };
 
-$("#submitButton").on('click', function(){ //don't get this 100%
+$(".submitButton").on('click', function(){ //don't get this 100%
     console.log("in submit");
     
     $(this).css({'background-color':'#445155'})
