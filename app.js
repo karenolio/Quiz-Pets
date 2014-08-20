@@ -11,7 +11,6 @@ $('#start').on('click', function(){
       var getStarted = $('#getStarted');
       $('#getStarted').hide();
       q1Appear();
-  
 });
 
 //When user clicks on an answer, ".selectedAnswer" class is appended to that answer. 
@@ -30,7 +29,8 @@ function clearScreen() {
     $("#makeyourguess").hide();
 };
 
-function q1Appear(){
+function q1Appear(){ //my q1 is the gif, and for some reason, 
+    //all the gifs show. I thought that #firstQuestion.show() would only show my first gif and not all
     $(".box").css({'opacity':'1'});
     $(".box").show(); 
     $("#firstQuestion").show();
@@ -59,7 +59,7 @@ function q2Appear(){
 function q2Clear() {
     console.log("in q2Clear"); // not sure if it'll do anything for me
     $("#secondQuestion").hide();
-    //$(".q2").hide();
+    $(".q2").hide();
     $('.answer').removeClass('selectedAnswer'); 
     //no need for hiding box here?
 };
@@ -74,9 +74,9 @@ function q3Appear () {
 };
 
 function q3Clear() {
-    //console.log("in q3Clear"); // not sure if it'll do anything for me
+    console.log("in q3Clear"); 
     $("#thirdQuestion").hide();
-    //$(".q3").hide();
+    $(".q3").hide();
     $('.answer').removeClass('selectedAnswer'); 
     //no need for hiding box here?
 };
@@ -91,9 +91,9 @@ function q4Appear () {
 };
 
 function q4Clear() {
-    //console.log("in q3Clear"); // not sure if it'll do anything for me
+    console.log("in q4Clear"); 
     $("#fourthQuestion").hide();
-    //$(".q3").hide();
+    $(".q4").hide();
     $('.answer').removeClass('selectedAnswer'); 
     //no need for hiding box here?
 };
@@ -108,9 +108,9 @@ function q5Appear () {
 };
 
 function q5Clear() {
-    //console.log("in q3Clear"); // not sure if it'll do anything for me
+    console.log("in q5Clear"); 
     $("#fifthQuestion").hide();
-    //$(".q3").hide();
+    $(".q5").hide();
     $('.answer').removeClass('selectedAnswer'); 
     //no need for hiding box here?
 };
